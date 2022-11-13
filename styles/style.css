@@ -3,7 +3,6 @@
 }
 
 html {
-  /* 10px */
   font-size: 62.5%;
 }
 
@@ -12,10 +11,6 @@ html {
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
   color: white;
   font-family: "Chronicle Display";
-  /*
-  ниже описание свойств фона из 3-х слоёв(1-градиент-нижний переход цвета,
-  2-градиент-вуаль, 3-картинка)
-   */
   background-image: linear-gradient(
       180deg,
       rgba(11, 29, 38, 0) 0%,
@@ -26,20 +21,15 @@ html {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 100% 50vh, 100% 150vh, auto 150vh;
   background-position: 0 100vh, 0 0, left -100px;
-  /* --- */
-  /* padding: 1.5% 0 3%; */
   padding: 2.5vh 0 4.5vh;
 }
 
 .logo {
-  margin: 0; /*сбросила отступы браузера*/
+  margin: 0;
   text-transform: uppercase;
-  /* line-height: 38px; */
   line-height: calc(2rem + 2vw);
-  /* letter-spacing: 2px; */
   letter-spacing: calc(0.1rem + 0.2vw);
   letter-spacing: 2px;
-  /* font-size: 32px; */
   font-size: calc(1.5rem + 1.5vw);
 }
 
@@ -50,20 +40,16 @@ html {
 }
 
 .list {
-  /*сбросила отступы браузера*/
   margin: 0;
   padding: 0;
-  /* --- */
   list-style: none;
 }
 
 .page__dash {
-  /* margin-right: 32px; */
   margin-right: 1.5vw;
   letter-spacing: 0;
 }
 
-/* HEADER */
 .header {
   width: 90vw;
   margin: auto;
@@ -88,15 +74,11 @@ html {
 .header__nav-link {
   font-style: normal;
   font-weight: 700;
-  /* font-size: 18px;
-  line-height: 22px; */
   font-size: calc(1rem + 1vw);
   line-height: calc(1.1rem + 1.1vw);
 }
 
 .header__account-link {
-  /* font-size: 17px;
-  line-height: 21px; */
   font-size: calc(1rem + 1vw);
   line-height: calc(1.1rem + 1.1vw);
 }
@@ -105,12 +87,9 @@ html {
   background-image: url(../images/cart.png);
   background-size: 1.25vw;
   display: inline-block;
-  /* width: 24px;
-  height: 24px; */
   width: 1.25vw;
   height: 1.25vw;
   vertical-align: middle;
-  /* margin-right: 8px; */
   margin-right: 0.4vw;
 }
 
@@ -126,35 +105,27 @@ html {
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  /* font-size: 18px;
-  line-height: 22px; */
   font-size: calc(1rem + 1vw);
   line-height: calc(1.1rem + 1.1vw);
-  writing-mode: vertical-rl; /*поворот текста*/
-  /* margin-bottom: 24px; */
+  writing-mode: vertical-rl;
   margin-bottom: 1.25vw;
 }
 
 .header__social-list {
   display: flex;
   flex-direction: column;
-  /* gap: 24px; */
   gap: 1.25vw;
 }
 
 .header__social-icon {
-  /* width: 24px;
-  height: 24px; */
   width: 1.25vw;
   height: 1.25vw;
 }
 
 .header__title-box {
-  /* max-width: 950px; */
   max-width: 60vw;
   display: flex;
   flex-direction: column;
-  /* gap: 32px; */
   gap: 1.7vw;
 }
 
@@ -163,9 +134,7 @@ html {
   color: var(--yellow);
   font-style: normal;
   font-weight: 800;
-  /* font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 6px;*/
+  font-size: 18px;
   font-size: calc(1rem + 1vw);
   line-height: calc(1.1rem + 1.1vw);
   letter-spacing: calc(0.4rem + 0.4vw);
@@ -176,8 +145,6 @@ html {
   margin: 0;
   font-style: normal;
   font-weight: 600;
-  /* font-size: 88px;
-  line-height: 100px; */
   font-size: calc(3rem + 3vw);
   line-height: calc(4rem + 4vw);
   text-transform: capitalize;
@@ -190,8 +157,6 @@ html {
 }
 
 .header__slider-list {
-  /* width: 77px;
-  height: 240px; */
   width: 5vw;
   height: 32vh;
   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.2)); /* тень */
@@ -201,7 +166,6 @@ html {
 }
 
 .header__slider-point {
-  /* height: 60px; */
   height: 8vh;
   font-size: calc(0.8rem + 0.8vw);
   border-right: 3px solid rgba(255, 255, 255, 0.5);
@@ -212,12 +176,9 @@ html {
 }
 
 .header__slider-point_active {
-  /* border-right: 3px solid white; */
   border-right-color: white;
 }
-/* --- */
 
-/* CONTENT */
 .content {
   width: 76%;
   height: 300vh;
@@ -227,7 +188,7 @@ html {
   gap: 8%;
 }
 .chapter {
-  position: relative; /*для управления позицией дочерних элементов*/
+  position: relative;
   display: flex;
   height: 28%;
 }
@@ -332,9 +293,7 @@ html {
 .chapter__img_name_where {
   background-image: url(../images//03.png);
 }
-/* --- */
 
-/* FOOTER */
 .footer {
   width: 76%;
   margin: 8% auto 0;
@@ -398,4 +357,3 @@ html {
 
 .footer__column_content_info {
 }
-/* --- */
